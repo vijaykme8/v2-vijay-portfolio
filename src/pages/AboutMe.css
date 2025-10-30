@@ -1,0 +1,399 @@
+.about-section {
+  background-color: #ffffff;
+  padding-top: 10%;
+  padding-bottom: 2%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  z-index: 1;
+  /* border: 1px solid red; */
+}
+
+.about-content-1 {
+  display: flex;
+  align-items: center;
+  flex: 0 0 auto;
+  gap: 24px;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.about-logo {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  object-fit: contain;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.about-heading {
+  font-size: 80px;
+  line-height: 1;
+  letter-spacing: -2.5px;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+}
+
+.about-paragraph {
+  font-size: 14px;
+  line-height: 22px;
+  color: #000000;
+  text-align: justify;
+  max-width: 560px;
+}
+
+.about-wrapper {
+  width: 100%;
+  padding: 80px 80px;
+  padding-bottom: 10px !important;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: top;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  gap: 60px;
+  /* border: 1px solid red; */
+}
+
+.skills-wrapper {
+  width: 100%;
+  padding: 80px 80px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: top;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  gap: 60px;
+}
+
+.animation-wrapper {
+  width: 100%;
+  min-height: 100%;
+  height: auto;
+  padding: 0;
+  z-index: -1;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid red;  */
+}
+
+.image-sequence-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.sequence-image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.about-wrapper div {
+  color: black;
+  font-weight: bold;
+}
+@media screen and (max-width: 1920px) {
+  .about-wrapper div {
+    font-size: 34px;
+  }
+}
+
+.skills-wrapper div {
+  color: black;
+  font-weight: bold;
+}
+
+.links-titles {
+  text-align: left;
+  width: fit-content;
+  padding-top: 4%;
+}
+
+.skill-cards {
+  text-align: left;
+  width: fit-content;
+}
+
+.skill-titles {
+  text-align: left;
+  width: fit-content;
+  padding-top: 4%;
+}
+@media screen and (max-width: 1920px) {
+  .skills-wrapper div {
+    font-size: 34px;
+  }
+}
+
+.skill-cards-modules {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.skill-cards-1 {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  gap: 2%;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  margin-top: 30px;
+  overflow: hidden;
+  /* border: 1px solid red; */
+}
+
+
+
+.skill-cards-1-item-1,
+.skill-cards-1-item-2,
+.skill-cards-1-item-3 {
+  display: flex;
+  width: 32%;
+  flex: 1;
+  margin: 0px;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 34px 44px;
+  padding-left: 24px !important;
+  gap: 16px;
+  background-color: rgba(0, 0, 0, 0.04);
+  border-radius: 30px;
+  box-sizing: border-box;
+}
+
+.skill-cards-2 {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  gap: 2%;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  margin-top: 30px;
+  overflow: hidden;
+  /* border: 1px solid red; */
+}
+
+.skill-cards-2-item-1,
+.skill-cards-2-item-2,
+.skill-cards-2-item-3 {
+  display: flex;
+  width: 32%;
+  flex: 1;
+  margin: 0px;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 34px 44px;
+  padding-left: 24px !important;
+  gap: 16px;
+  background-color: rgba(0, 0, 0, 0.04);
+  border-radius: 30px;
+  box-sizing: border-box;
+}
+
+/* Smooth hover transitions for skill cards */
+.skill-cards-1-item-1,
+.skill-cards-1-item-2,
+.skill-cards-1-item-3,
+.skill-cards-2-item-1,
+.skill-cards-2-item-2,
+.skill-cards-2-item-3 {
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+/* Ensure icon transition is smooth */
+.skill-cards-1-item-1 img,
+.skill-cards-1-item-2 img,
+.skill-cards-1-item-3 img,
+.skill-cards-2-item-1 img,
+.skill-cards-2-item-2 img,
+.skill-cards-2-item-3 img {
+  transition: filter 0.25s ease, opacity 0.25s ease;
+}
+
+/* Hover: turn the card black and contents white */
+.skill-cards-1-item-1:hover,
+.skill-cards-1-item-2:hover,
+.skill-cards-1-item-3:hover,
+.skill-cards-2-item-1:hover,
+.skill-cards-2-item-2:hover,
+.skill-cards-2-item-3:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/* Text inside cards becomes white */
+.skill-cards-1-item-1:hover .skill-text-1,
+.skill-cards-1-item-2:hover .skill-text-1,
+.skill-cards-1-item-3:hover .skill-text-1,
+.skill-cards-2-item-1:hover .skill-text-1,
+.skill-cards-2-item-2:hover .skill-text-1,
+.skill-cards-2-item-3:hover .skill-text-1 {
+  color: #ffffff;
+}
+
+.skill-cards-1-item-1:hover .skill-text-2,
+.skill-cards-1-item-2:hover .skill-text-2,
+.skill-cards-1-item-3:hover .skill-text-2,
+.skill-cards-2-item-1:hover .skill-text-2,
+.skill-cards-2-item-2:hover .skill-text-2,
+.skill-cards-2-item-3:hover .skill-text-2 {
+  color: #ffffff !important;
+  opacity: 0.6;
+}
+
+/* Paragraphs inherit white too */
+.skill-cards-1-item-1:hover p,
+.skill-cards-1-item-2:hover p,
+.skill-cards-1-item-3:hover p,
+.skill-cards-2-item-1:hover p,
+.skill-cards-2-item-2:hover p,
+.skill-cards-2-item-3:hover p {
+  color: #ffffff !important;
+}
+
+/* Icons invert to white on black */
+.skill-cards-1-item-1:hover img,
+.skill-cards-1-item-2:hover img,
+.skill-cards-1-item-3:hover img,
+.skill-cards-2-item-1:hover img,
+.skill-cards-2-item-2:hover img,
+.skill-cards-2-item-3:hover img {
+  filter: invert(1) brightness(1.3);
+}
+
+
+.skill-text-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 4px;
+  width: 100%;
+}
+
+.skill-text-1 {
+  font-size: 22px !important;
+  line-height: 34px !important;
+  font-weight: 600 !important;
+  text-align: left;
+}
+
+
+.skill-text-2 {
+  font-size: 16px !important;
+  color: rgba(0, 0, 0, 0.6) !important;
+  font-weight: normal !important;
+  text-align: left !important;
+  transition: color 0.25s ease, opacity 0.25s ease;
+}
+
+.skill-text-2 p {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Also allow hovering the description text itself to reduce opacity */
+.skill-text-2:hover {
+  opacity: 0.8;
+}
+
+.skill-cards-1-item-1 img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+.social-cards {
+  display: flex;
+  width: 100%;
+  height: auto;
+  gap: 24px;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 30px;
+  overflow: hidden;
+}
+
+.social-cards a {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-cards a:has(img[alt="LinkedIn"]) {
+  flex: 1.86; /* Approximately 1.86 times wider than regular cards */
+}
+
+.social-cards img {
+  width: 100%;
+  height: 173.25px;
+  cursor: pointer;
+  transition: transform 0.2s ease, filter 0.0s ease;
+  object-fit: contain;
+}
+
+.social-cards img:hover {
+  filter: brightness(1.0) contrast(1.2);
+}
+
+
+/* Responsive breakpoints for smaller screens */
+@media (max-width: 768px) {
+  .social-cards {
+    gap: 16px;
+  }
+  
+  .social-cards img {
+    height: 120px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .social-cards {
+    gap: 12px;
+  }
+  
+  .social-cards img {
+    height: 80px;
+  }
+}
+
+@media (max-width: 320px) {
+  .social-cards {
+    gap: 8px;
+  }
+  
+  .social-cards img {
+    height: 60px;
+  }
+}

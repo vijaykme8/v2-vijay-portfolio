@@ -1,0 +1,156 @@
+.quality-control {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  max-width: 300px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.quality-control-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.quality-control-header h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+
+.enhancing-indicator {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: #28a745;
+  font-weight: 500;
+}
+
+.enhancing-dot {
+  width: 8px;
+  height: 8px;
+  background: #28a745;
+  border-radius: 50%;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.quality-options {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.quality-option {
+  background: #f8f9fa;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  padding: 12px;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: inherit;
+}
+
+.quality-option:hover:not(:disabled) {
+  background: #e9ecef;
+  border-color: #007bff;
+}
+
+.quality-option.active {
+  background: #e3f2fd;
+  border-color: #007bff;
+}
+
+.quality-option:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.quality-option-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.quality-label {
+  font-weight: 600;
+  font-size: 14px;
+  color: #333;
+}
+
+.quality-check {
+  color: #007bff;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.quality-description {
+  font-size: 12px;
+  color: #666;
+  line-height: 1.3;
+}
+
+.quality-info {
+  border-top: 1px solid #e9ecef;
+  padding-top: 15px;
+}
+
+.quality-info p {
+  margin: 0 0 8px 0;
+  font-size: 12px;
+  color: #666;
+  line-height: 1.4;
+}
+
+.quality-tip {
+  background: #fff3cd;
+  border: 1px solid #ffeaa7;
+  border-radius: 6px;
+  padding: 8px;
+  font-size: 11px !important;
+  color: #856404 !important;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .quality-control {
+    top: 10px;
+    right: 10px;
+    left: 10px;
+    max-width: none;
+    padding: 15px;
+  }
+  
+  .quality-control-header h3 {
+    font-size: 14px;
+  }
+  
+  .quality-option {
+    padding: 10px;
+  }
+  
+  .quality-label {
+    font-size: 13px;
+  }
+  
+  .quality-description {
+    font-size: 11px;
+  }
+} 

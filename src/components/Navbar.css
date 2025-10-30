@@ -1,0 +1,198 @@
+.navbar-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  transition: transform 0.3s ease;
+}
+
+/* Add a spacer class to reserve space for the navbar */
+.navbar-spacer {
+  height: 48px; /* Adjust this value to match the actual navbar height */
+  width: 100%;
+}
+
+.navbar-container.hidden {
+  transform: translateY(-100%);
+}
+
+.navbar-container.visible {
+  transform: translateY(0);
+}
+
+.navbar {
+  width: 100%;
+  padding: 14px 0;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-center-group {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 0 24px;
+  box-sizing: border-box;
+  flex-wrap: nowrap;
+}
+
+.navbar-logo img {
+  height: 20px;
+  display: block;
+}
+
+.navbar-links-container {
+  display: flex;
+  gap: 22px;
+  align-items: center;
+}
+
+.navbar-links-group {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links-group li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.navbar-links-group li a:hover {
+  color: #007aff;
+}
+
+.download-icon {
+  width: 15px;
+  height: 14px;
+  display: block;
+  transition: opacity 0.2s ease;
+}
+
+.resume-link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.navbar-search {
+  cursor: pointer;
+}
+
+.navbar-search img {
+  width: 20px;
+  height: 20px;
+  display: block;
+  cursor: pointer;
+}
+
+/* Floating Search Bar Styles */
+.floating-search-container {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1001;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0 24px;
+  box-sizing: border-box;
+  margin-top: 10px;
+}
+
+.floating-search-bar {
+  position: relative;
+  border-radius: 20px;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  max-width: 450px;
+  width: 100%;
+  animation: slideDown 0.3s ease-out;
+  overflow: hidden;
+}
+
+.floating-search-bar::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(12px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  box-shadow: 
+    0 4px 20px rgba(0, 0, 0, 0.08),
+    0 1px 3px rgba(0, 0, 0, 0.05),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6);
+  z-index: -1;
+}
+
+.search-input-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+}
+
+.search-input-icon {
+  width: 18px;
+  height: 18px;
+  opacity: 0.6;
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 12px;
+  color: #333;
+  width: 100%;
+  font-family: inherit;
+}
+
+.search-input::placeholder {
+  color: #999;
+}
+
+.search-shortcuts {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.shortcut-key {
+  background: rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  padding: 4px 6px;
+  font-size: 11px;
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 500;
+  min-width: 16px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

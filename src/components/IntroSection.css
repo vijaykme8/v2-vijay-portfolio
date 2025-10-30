@@ -1,0 +1,80 @@
+.intro-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px; /* Gap between quote group and sign */
+  padding: 60px 80px 60px 80px;
+  background-color: #ffffff;
+  flex-wrap: wrap;
+}
+
+/* Shared illustration styles */
+.intro-illustration {
+  display: block;
+  margin: 0;
+  object-fit: contain;
+}
+
+/* Specific: Quote Illustration */
+.intro-illustration.quote {
+  height: 12%;
+  width: 6%;
+  object-fit: fill;
+}
+
+/* Specific: Sign Illustration */
+.intro-illustration.sign {
+  height: 15vh;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+
+/* Quote + Text group */
+.quote-text-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2px; /* Exact gap between quote and text */
+  margin: 0;
+  padding: 0;
+}
+
+.intro-text {
+  font-size: 26px;
+  line-height: 34px;
+  font-weight: 700;
+  color: #111;
+  text-align: left;
+  margin: 0;
+  max-width: 100%;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .intro-section {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .quote-text-group {
+    align-items: center;
+    gap: 4px;
+  }
+
+  .intro-text {
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+  }
+
+  .intro-illustration.quote {
+    height: 60px;
+  }
+
+  .intro-illustration.sign {
+    height: 64px;
+    width: 180px;
+  }
+}
