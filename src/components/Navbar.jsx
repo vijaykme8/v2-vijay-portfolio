@@ -74,7 +74,7 @@ function Navbar({ onProjectClick }) {
             <ul className="navbar-links-group">
               <li>
                 <a
-                  href="https://drive.google.com/file/d/1RQXOmTWpATYwLdsbnaibBOMT2IH-k6o3/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1_goN6glCDAWGyoKXqq3UfxqEZnk0i8bl/view?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="resume-link"
